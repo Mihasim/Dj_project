@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skystore</title>
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- подключение статического CSS-файла -->
+<link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+<!-- подключение статического JS-файла -->
+<script type="text/javascript" src="/static/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
@@ -59,11 +64,10 @@
                         </div>
                         <div class="mb-3">
                             <label for="message">Сообщение</label>
-                            <textarea type="text" name="message" class="form-control" id="message" placeholder="Контактный телефон" required></textarea>
+                            <textarea type="text" name="message" class="form-control" id="message" placeholder="Сообщение" required></textarea>
                         </div>
                     </form>
-                    <input type="submit">
-                    <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Отправить</button>
+                    <button name="submit" type="submit" class="btn btn-lg btn-block btn-outline-primary" value="Send">Отправить</button>
                 </div>
             </div>
         </div>
@@ -101,6 +105,6 @@
     </footer>
 </div>
 
-<script src="/static/js/bootstrap.bundle.min.js"></script>
+<script src="/static/bootstrap.bundle.min.js"></script>
 </body>
 </html>
