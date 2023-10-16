@@ -12,5 +12,3 @@ def contacts(request):
         message = request.POST.get('message')
         print(f'Получено сообщение: {name}, ({phone}): {message}')
     return render(request, 'catalog/contacts.html')
-
-
